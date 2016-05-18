@@ -1,0 +1,270 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Components | Bootstrap 3.3.6 Elements</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<!-- header navbar -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/~jhixon/bootstrap-3.3.6-elements/">Bootstrap 3.3.6 Elements</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/~jhixon/bootstrap-3.3.6-elements/">CSS</a></li>
+						<li class="active"><a href="/~jhixon/bootstrap-3.3.6-elements/components.html">Components</a></li>
+						<li><a href="/~jhixon/bootstrap-3.3.6-elements/javascript.html">JavaScript</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+		
+			<!-- content -->
+			<h1>Components</h1>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<h2 class="page-header">Glyphicons</h2>
+					<div class="btn-toolbar" role="toolbar">
+						<div class="btn-group">
+							<button aria-label="Left Align" class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-align-left"></span></button>
+							<button aria-label="Center Align" class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-align-center"></span></button>
+							<button aria-label="Right Align" class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-align-right"></span></button>
+							<button aria-label="Justify" class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-align-justify"></span></button>
+						</div>
+					</div><br>
+					<div class="btn-toolbar" role="toolbar">
+						<button class="btn btn-default btn-lg" type="button"><span aria-hidden="true" class="glyphicon glyphicon-star"></span> Star</button>
+						<button class="btn btn-default" type="button"><span aria-hidden="true" class="glyphicon glyphicon-star"></span> Star</button>
+						<button class="btn btn-default btn-sm" type="button"><span aria-hidden="true" class="glyphicon glyphicon-star"></span> Star</button>
+						<button class="btn btn-default btn-xs" type="button"><span aria-hidden="true" class="glyphicon glyphicon-star"></span> Star</button>
+					</div>
+					
+				</div>
+				<div class="col-md-6">
+					
+					<h2 class="page-header">Dropdown</h2>
+					<div class="dropdown clearfix">
+						<button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" type="button">Dropdown <span class="caret"></span></button>
+						<ul aria-labelledby="dropdownMenu3" class="dropdown-menu">
+							<li class="dropdown-header">Dropdown header</li>
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li class="disabled">
+								<a href="#">Disabled link</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<h2 class="page-header">Button Groups</h2>
+			<div class="row">
+				<div class="col-md-6">
+
+					<h3>Basics</h3>
+					<div aria-label="Toolbar with button groups" class="btn-toolbar" role="toolbar">
+						<div aria-label="First group" class="btn-group" role="group">
+							<button class="btn btn-default" type="button">1</button>
+							<button class="btn btn-default" type="button">2</button>
+							<button class="btn btn-default" type="button">3</button>
+							<button class="btn btn-default" type="button">4</button>
+						</div>
+						<div aria-label="Second group" class="btn-group" role="group">
+							<button class="btn btn-default" type="button">5</button>
+							<button class="btn btn-default" type="button">6</button>
+							<button class="btn btn-default" type="button">7</button>
+						</div>
+						<div aria-label="Third group" class="btn-group" role="group">
+							<button class="btn btn-default" type="button">8</button>
+						</div>
+					</div>
+					
+					<h3>Nesting</h3>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-default">1</button>
+						<button type="button" class="btn btn-default">2</button>
+						
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dropdown
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li><a href="#">Dropdown link</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-6">
+
+					<h3>Sizing</h3>
+					<div aria-label="Large button group" class="btn-group btn-group-lg" role="group">
+						<button class="btn btn-default" type="button">Left</button>
+						<button class="btn btn-default" type="button">Middle</button>
+						<button class="btn btn-default" type="button">Right</button>
+					</div><br><br>
+					<div aria-label="Default button group" class="btn-group" role="group">
+						<button class="btn btn-default" type="button">Left</button>
+						<button class="btn btn-default" type="button">Middle</button>
+						<button class="btn btn-default" type="button">Right</button>
+					</div><br><br>
+					<div aria-label="Small button group" class="btn-group btn-group-sm" role="group">
+						<button class="btn btn-default" type="button">Left</button>
+						<button class="btn btn-default" type="button">Middle</button>
+						<button class="btn btn-default" type="button">Right</button>
+					</div><br><br>
+					<div aria-label="Extra-small button group" class="btn-group btn-group-xs" role="group">
+						<button class="btn btn-default" type="button">Left</button>
+						<button class="btn btn-default" type="button">Middle</button>
+						<button class="btn btn-default" type="button">Right</button>
+					</div>
+					
+				</div>
+			</div>
+			
+			<h2 class="page-header">Input Groups</h2>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<h3>Basics</h3>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">@</span>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+					</div><br>
+					
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+						<span class="input-group-addon" id="basic-addon2">@example.com</span>
+					</div><br>
+					
+					<div class="input-group">
+						<span class="input-group-addon">$</span>
+						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon">.00</span>
+					</div><br>
+					
+					<label for="basic-url">Your vanity URL</label>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+						<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+					</div>
+					
+				</div>
+				<div class="col-md-6">
+					
+					<h3>Sizing</h3>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizing-addon1">@</span>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+					</div><br>
+					
+					<div class="input-group">
+						<span class="input-group-addon" id="sizing-addon2">@</span>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+					</div><br>
+					
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon" id="sizing-addon3">@</span>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+					</div>
+					
+					<h3>Checkbox & Radio</h3>
+					<div class="row">
+					  <div class="col-lg-6">
+					    <div class="input-group">
+					      <span class="input-group-addon">
+					        <input type="checkbox" aria-label="...">
+					      </span>
+					      <input type="text" class="form-control" aria-label="...">
+					    </div><!-- /input-group -->
+					  </div><!-- /.col-lg-6 -->
+					  <div class="col-lg-6">
+					    <div class="input-group">
+					      <span class="input-group-addon">
+					        <input type="radio" aria-label="...">
+					      </span>
+					      <input type="text" class="form-control" aria-label="...">
+					    </div><!-- /input-group -->
+					  </div><!-- /.col-lg-6 -->
+					</div><!-- /.row -->
+					
+				</div>
+			</div>
+			
+			<h2 class="page-header">Nav</h2>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<h3>Tabs</h3>
+					<ul class="nav nav-tabs">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation" class="disabled"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+					
+				</div>
+				<div class="col-md-6">
+					
+					<h3>Pills</h3>
+					<ul class="nav nav-pills">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation" class="disabled"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+					
+					<h4>Stacked Variation</h4>
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation" class="disabled"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			<h3>Justified</h3>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<ul class="nav nav-tabs nav-justified"> <li role="presentation" class="active"><a href="#">Home</a></li> <li role="presentation"><a href="#">Profile</a></li> <li role="presentation"><a href="#">Messages</a></li> </ul>
+					
+				</div>
+				<div class="col-md-6">
+					
+					<ul class="nav nav-pills nav-justified"> <li role="presentation" class="active"><a href="#">Home</a></li> <li role="presentation"><a href="#">Profile</a></li> <li role="presentation"><a href="#">Messages</a></li> </ul>
+					
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
